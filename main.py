@@ -1,6 +1,6 @@
 from pdf2image import convert_from_path
 import sys
-sys.path.append('./path/to/submodule/FastSAM')
+sys.path.append(os.path.abspath('path/to/submodule/FastSAM'))
 from FastSAM.fastsam import FastSAM, FastSAMPrompt
 from func import masks_to_bool, annotate_image
 from concurrent.futures import ThreadPoolExecutor
